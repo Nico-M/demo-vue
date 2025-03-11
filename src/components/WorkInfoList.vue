@@ -7,7 +7,7 @@
     </div>
     <div class="list-content">
       <!-- 添加无限循环 -->
-      <vue-seamless-scroll :data="workList" class="warp" :limitMoveNum="4">
+      <vue-seamless-scroll :data="workList" class="warp" :limitMoveNum="5">
         <ul class="item">
           <li v-for="item in workList" :key="item.id" class="list-row">
             <div class="list-item">{{ item.id }}</div>
@@ -118,7 +118,8 @@ export default {
   }
 
   .warp{
-    height: 400px;
+    height: 320px;
+    width: 100%;
     overflow: hidden;
     .item{
       padding:0;
